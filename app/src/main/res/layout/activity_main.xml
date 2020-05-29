@@ -7,42 +7,74 @@
     android:layout_height="match_parent"
     android:background="@drawable/mainpage"
     tools:context=".MainActivity">
-
-
     <com.airbnb.lottie.LottieAnimationView
-        android:layout_width="match_parent"
-        android:layout_height="266dp"
+        android:id="@+id/lottieAnimationView2"
+        android:layout_width="410dp"
+        android:layout_height="279dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.174"
+        app:layout_constraintVertical_bias="0.0"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
         app:lottie_rawRes="@raw/stayhome" />
-
     <Button
         android:id="@+id/assesment"
         android:layout_width="315dp"
         android:layout_height="80dp"
-        android:layout_marginTop="160dp"
-        android:layout_marginBottom="48dp"
+        android:layout_above="@+id/prevention"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
         android:background="@color/cardview_light_background"
-        android:text="Assesment"
-        app:layout_constraintBottom_toTopOf="@+id/prevention"
+        android:text="Asses Yourself"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.43" />
 
     <Button
         android:id="@+id/prevention"
         android:layout_width="315dp"
         android:layout_height="80dp"
-        android:layout_marginBottom="28dp"
+        android:layout_above="@+id/meditate"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentEnd="true"
         android:background="@color/cardview_light_background"
-        android:text="Prevention"
+        android:text="Preventions"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.594" />
+
+    <Button
+        android:id="@+id/meditate"
+        android:layout_width="315dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/cardview_light_background"
+        android:text="stressed ?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.757" />
+
+    <Button
+        android:id="@+id/corona_tracker"
+        android:layout_width="315dp"
+        android:layout_height="80dp"
+        android:background="@color/cardview_light_background"
+        android:text="Corona Tracker"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.926" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
